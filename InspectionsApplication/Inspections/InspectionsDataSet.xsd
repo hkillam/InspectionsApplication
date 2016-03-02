@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BuildingsTableAdapter" GeneratorDataComponentClassName="BuildingsTableAdapter" Name="Buildings" UserDataComponentName="BuildingsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Buildings" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Buildings" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Buildings` WHERE ((`ID` = ?) AND ((? = 1 AND `SchoolID` IS NULL) OR (`SchoolID` = ?)) AND ((? = 1 AND `BuildingName` IS NULL) OR (`BuildingName` = ?)))</CommandText>
@@ -62,7 +62,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FloorsTableAdapter" GeneratorDataComponentClassName="FloorsTableAdapter" Name="Floors" UserDataComponentName="FloorsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Floors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Floors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Floors` WHERE ((`ID` = ?) AND ((? = 1 AND `BuildingID` IS NULL) OR (`BuildingID` = ?)) AND ((? = 1 AND `FloorName` IS NULL) OR (`FloorName` = ?)) AND ((? = 1 AND `FileName` IS NULL) OR (`FileName` = ?)) AND ((? = 1 AND `Sequence` IS NULL) OR (`Sequence` = ?)))</CommandText>
@@ -126,7 +126,7 @@
               <Mapping SourceColumn="Sequence" DataSetColumn="Sequence" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Floors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetFloorsByBuildingID" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetFloorsByBuildingID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetFloorsByBuildingID" UserSourceName="FillBy">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Floors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetFloorsByBuildingID" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetFloorsByBuildingID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetFloorsByBuildingID" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT BuildingID, FileName, FloorName, ID, Sequence FROM Floors ORDER BY Sequence</CommandText>
@@ -140,7 +140,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SchoolsTableAdapter" GeneratorDataComponentClassName="SchoolsTableAdapter" Name="Schools" UserDataComponentName="SchoolsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Schools" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Schools" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Schools` WHERE ((`ID` = ?) AND ((? = 1 AND `SchoolName` IS NULL) OR (`SchoolName` = ?)))</CommandText>
@@ -186,7 +186,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SpacesTableAdapter" GeneratorDataComponentClassName="SpacesTableAdapter" Name="Spaces" UserDataComponentName="SpacesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Spaces" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Spaces" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Spaces` WHERE ((`ID` = ?) AND ((? = 1 AND `Code` IS NULL) OR (`Code` = ?)) AND ((? = 1 AND `SpaceName` IS NULL) OR (`SpaceName` = ?)) AND ((? = 1 AND `FloorID` IS NULL) OR (`FloorID` = ?)) AND ((? = 1 AND `SpaceTypeID` IS NULL) OR (`SpaceTypeID` = ?)) AND ((? = 1 AND `Top` IS NULL) OR (`Top` = ?)) AND ((? = 1 AND `Left` IS NULL) OR (`Left` = ?)) AND ((? = 1 AND `Width` IS NULL) OR (`Width` = ?)) AND ((? = 1 AND `Height` IS NULL) OR (`Height` = ?)))</CommandText>
@@ -278,7 +278,18 @@
               <Mapping SourceColumn="Height" DataSetColumn="Height" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Spaces" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSpacesByFloorID" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetSpacesByFloorID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSpacesByFloorID" UserSourceName="FillBy">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteSpace" Modifier="Public" Name="DeleteSpace" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteSpace">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Spaces
+WHERE        (ID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="Spaces" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Spaces" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSpacesByFloorID" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetSpacesByFloorID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSpacesByFloorID" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT ID, Code, SpaceName, FloorID, SpaceTypeID, [Top], [Left], Width, Height FROM Spaces WHERE (FloorID = thefloor)</CommandText>
@@ -288,28 +299,42 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="NewSpace" Modifier="Public" Name="NewSpace" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="NewSpace">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="NewSpace" Modifier="Public" Name="NewSpace" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="NewSpace">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO Spaces
                          (SpaceName, FloorID, [Top], [Left], Width, Height)
 VALUES        (?, ?, ?, ?, ?, ?)</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="name" Precision="0" Scale="0" Size="1024" SourceColumn="SpaceName" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="floorid" Precision="0" Scale="0" Size="1024" SourceColumn="FloorID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="Param5" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="left" Precision="0" Scale="0" Size="1024" SourceColumn="Left" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="top" Precision="0" Scale="0" Size="1024" SourceColumn="Top" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="Param6" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="width" Precision="0" Scale="0" Size="1024" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="Height" DataSourceName="Spaces" DataTypeServer="DbType.Double" DbType="Decimal" Direction="Input" ParameterName="height" Precision="15" ProviderType="Double" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="SpaceName" DataSourceName="Spaces" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="SpaceName" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="SpaceName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="FloorID" DataSourceName="Spaces" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="FloorID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="FloorID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="Top" DataSourceName="Spaces" DataTypeServer="DbType.Double" DbType="Decimal" Direction="Input" ParameterName="Top" Precision="15" ProviderType="Double" Scale="0" Size="0" SourceColumn="Top" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param4" ColumnName="Left" DataSourceName="Spaces" DataTypeServer="DbType.Double" DbType="Decimal" Direction="Input" ParameterName="Left" Precision="15" ProviderType="Double" Scale="0" Size="0" SourceColumn="Left" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param5" ColumnName="Width" DataSourceName="Spaces" DataTypeServer="DbType.Double" DbType="Decimal" Direction="Input" ParameterName="Width" Precision="15" ProviderType="Double" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param6" ColumnName="Height" DataSourceName="Spaces" DataTypeServer="DbType.Double" DbType="Decimal" Direction="Input" ParameterName="Height" Precision="15" ProviderType="Double" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSpaceName" Modifier="Public" Name="UpdateSpaceName" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateSpaceName">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Spaces
+SET                SpaceName = ?, SpaceTypeID = ?
+WHERE        (ID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="SpaceName" DataSourceName="Spaces" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="SpaceName" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="SpaceName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="SpaceTypeID" DataSourceName="Spaces" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="SpaceTypeID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SpaceTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="ID" DataSourceName="Spaces" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="SpaceID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
               </DbSource>
             </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SpaceTypesTableAdapter" GeneratorDataComponentClassName="SpaceTypesTableAdapter" Name="SpaceTypes" UserDataComponentName="SpaceTypesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceTypes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceTypes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `SpaceTypes` WHERE ((`ID` = ?) AND ((? = 1 AND `SpaceTypeName` IS NULL) OR (`SpaceTypeName` = ?)))</CommandText>
@@ -357,7 +382,7 @@ ORDER BY SpaceTypeName</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SpaceAssessmentsTableAdapter" GeneratorDataComponentClassName="SpaceAssessmentsTableAdapter" Name="SpaceAssessments" UserDataComponentName="SpaceAssessmentsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceAssessments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceAssessments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ID, AssessmentDate, Air, Light, Temperature, Sound, Water, SpaceID
@@ -379,7 +404,17 @@ ORDER BY AssessmentDate DESC</CommandText>
               <Mapping SourceColumn="SpaceID" DataSetColumn="SpaceID" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceAssessments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySpaceID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetAssessmentsForSpace" GeneratorSourceName="FillBySpaceID" GetMethodModifier="Public" GetMethodName="GetAssessmentsForSpace" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetAssessmentsForSpace" UserSourceName="FillBySpaceID">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE from spaceassessments where SpaceID = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="SpaceID" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="SpaceID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SpaceID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceAssessments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySpaceID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetAssessmentsForSpace" GeneratorSourceName="FillBySpaceID" GetMethodModifier="Public" GetMethodName="GetAssessmentsForSpace" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetAssessmentsForSpace" UserSourceName="FillBySpaceID">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ID, AssessmentDate, Air, Light, Temperature, Sound, Water, SpaceID
@@ -392,28 +427,99 @@ ORDER BY AssessmentDate DESC</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="SpaceAssessments" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="NewSpaceAssessment" Modifier="Public" Name="NewSpaceAssessment" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="NewSpaceAssessment">
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="NewSpaceAssessment" Modifier="Public" Name="NewSpaceAssessment" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="NewSpaceAssessment">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>INSERT into spaceassessments</CommandText>
+                    <CommandText>INSERT INTO SpaceAssessments
+                         (SpaceID, Air, Light, Sound, Temperature, Water, AssessmentDate)
+VALUES        (?, ?, ?, ?, ?, ?,?)</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="spaceid" Precision="0" Scale="0" Size="0" SourceColumn="SpaceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="SpaceID" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="SpaceID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SpaceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="Air" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Air" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Air" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="Light" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Light" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Light" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param4" ColumnName="Sound" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Sound" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Sound" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param5" ColumnName="Temperature" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Temperature" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Temperature" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param6" ColumnName="Water" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Water" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param7" ColumnName="AssessmentDate" DataSourceName="SpaceAssessments" DataTypeServer="DbType.Date" DbType="Date" Direction="Input" ParameterName="AssessmentDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="AssessmentDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SystemsTableAdapter" GeneratorDataComponentClassName="SystemsTableAdapter" Name="Systems" UserDataComponentName="SystemsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Systems" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `Systems` WHERE ((`ID` = ?) AND ((? = 1 AND `ParentCode` IS NULL) OR (`ParentCode` = ?)) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)) AND ((? = 1 AND `Code` IS NULL) OR (`Code` = ?)) AND ((? = 1 AND `ParentID` IS NULL) OR (`ParentID` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Name" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `Systems` (`ParentCode`, `Name`, `Code`, `ParentID`) VALUES (?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>INSERT INTO SpaceAssessments
-                         (SpaceID, AssessmentDate, Air, Water, Light, Sound, Temperature)
-VALUES        (, today(),,,,,)</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, ParentCode, Name, Code, ParentID FROM Systems</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `Systems` SET `ParentCode` = ?, `Name` = ?, `Code` = ?, `ParentID` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `ParentCode` IS NULL) OR (`ParentCode` = ?)) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)) AND ((? = 1 AND `Code` IS NULL) OR (`Code` = ?)) AND ((? = 1 AND `ParentID` IS NULL) OR (`ParentID` = ?)))</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="spaceid" Precision="0" Scale="0" Size="0" SourceColumn="SpaceID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="thedate" Precision="0" Scale="0" Size="0" SourceColumn="AssessmentDate" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="air" Precision="0" Scale="0" Size="0" SourceColumn="Air" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="light" Precision="0" Scale="0" Size="0" SourceColumn="Light" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="temperature" Precision="0" Scale="0" Size="0" SourceColumn="Temperature" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="sound" Precision="0" Scale="0" Size="0" SourceColumn="Sound" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="water" Precision="0" Scale="0" Size="0" SourceColumn="Water" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ParentCode" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Name" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ParentID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="ParentCode" DataSetColumn="ParentCode" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="ParentID" DataSetColumn="ParentID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InspectionsConnection (MySettings)" DbObjectName="Systems" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByParentID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSystemsByParentID" GeneratorSourceName="FillByParentID" GetMethodModifier="Public" GetMethodName="GetSystemsByParentID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSystemsByParentID" UserSourceName="FillByParentID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, Name, Code, ParentCode, ParentID
+FROM            Systems where parentid=theParentID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="theparentid" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ParentID" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
@@ -425,15 +531,15 @@ VALUES        (, today(),,,,,)</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="InspectionsDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="InspectionsDataSet1" msprop:Generator_DataSetName="InspectionsDataSet1" msprop:EnableTableAdapterManager="True">
+  <xs:element name="InspectionsDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="InspectionsDataSet1" msprop:Generator_UserDSName="InspectionsDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Buildings" msprop:Generator_UserTableName="Buildings" msprop:Generator_RowDeletedName="BuildingsRowDeleted" msprop:Generator_RowChangedName="BuildingsRowChanged" msprop:Generator_RowClassName="BuildingsRow" msprop:Generator_RowChangingName="BuildingsRowChanging" msprop:Generator_RowEvArgName="BuildingsRowChangeEvent" msprop:Generator_RowEvHandlerName="BuildingsRowChangeEventHandler" msprop:Generator_TableClassName="BuildingsDataTable" msprop:Generator_TableVarName="tableBuildings" msprop:Generator_RowDeletingName="BuildingsRowDeleting" msprop:Generator_TablePropName="Buildings">
+        <xs:element name="Buildings" msprop:Generator_UserTableName="Buildings" msprop:Generator_RowEvArgName="BuildingsRowChangeEvent" msprop:Generator_TableVarName="tableBuildings" msprop:Generator_TablePropName="Buildings" msprop:Generator_RowDeletingName="BuildingsRowDeleting" msprop:Generator_RowChangingName="BuildingsRowChanging" msprop:Generator_RowDeletedName="BuildingsRowDeleted" msprop:Generator_RowEvHandlerName="BuildingsRowChangeEventHandler" msprop:Generator_TableClassName="BuildingsDataTable" msprop:Generator_RowChangedName="BuildingsRowChanged" msprop:Generator_RowClassName="BuildingsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="SchoolID" msprop:Generator_UserColumnName="SchoolID" msprop:Generator_ColumnVarNameInTable="columnSchoolID" msprop:Generator_ColumnPropNameInRow="SchoolID" msprop:Generator_ColumnPropNameInTable="SchoolIDColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="BuildingName" msprop:Generator_UserColumnName="BuildingName" msprop:Generator_ColumnVarNameInTable="columnBuildingName" msprop:Generator_ColumnPropNameInRow="BuildingName" msprop:Generator_ColumnPropNameInTable="BuildingNameColumn" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="SchoolID" msprop:Generator_ColumnVarNameInTable="columnSchoolID" msprop:Generator_ColumnPropNameInRow="SchoolID" msprop:Generator_ColumnPropNameInTable="SchoolIDColumn" msprop:Generator_UserColumnName="SchoolID" type="xs:int" minOccurs="0" />
+              <xs:element name="BuildingName" msprop:Generator_ColumnVarNameInTable="columnBuildingName" msprop:Generator_ColumnPropNameInRow="BuildingName" msprop:Generator_ColumnPropNameInTable="BuildingNameColumn" msprop:Generator_UserColumnName="BuildingName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -443,69 +549,34 @@ VALUES        (, today(),,,,,)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Floors" msprop:Generator_UserTableName="Floors" msprop:Generator_RowDeletedName="FloorsRowDeleted" msprop:Generator_RowChangedName="FloorsRowChanged" msprop:Generator_RowClassName="FloorsRow" msprop:Generator_RowChangingName="FloorsRowChanging" msprop:Generator_RowEvArgName="FloorsRowChangeEvent" msprop:Generator_RowEvHandlerName="FloorsRowChangeEventHandler" msprop:Generator_TableClassName="FloorsDataTable" msprop:Generator_TableVarName="tableFloors" msprop:Generator_RowDeletingName="FloorsRowDeleting" msprop:Generator_TablePropName="Floors">
+        <xs:element name="Floors" msprop:Generator_UserTableName="Floors" msprop:Generator_RowEvArgName="FloorsRowChangeEvent" msprop:Generator_TableVarName="tableFloors" msprop:Generator_TablePropName="Floors" msprop:Generator_RowDeletingName="FloorsRowDeleting" msprop:Generator_RowChangingName="FloorsRowChanging" msprop:Generator_RowDeletedName="FloorsRowDeleted" msprop:Generator_RowEvHandlerName="FloorsRowChangeEventHandler" msprop:Generator_TableClassName="FloorsDataTable" msprop:Generator_RowChangedName="FloorsRowChanged" msprop:Generator_RowClassName="FloorsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="BuildingID" msprop:Generator_UserColumnName="BuildingID" msprop:Generator_ColumnVarNameInTable="columnBuildingID" msprop:Generator_ColumnPropNameInRow="BuildingID" msprop:Generator_ColumnPropNameInTable="BuildingIDColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="FloorName" msprop:Generator_UserColumnName="FloorName" msprop:Generator_ColumnVarNameInTable="columnFloorName" msprop:Generator_ColumnPropNameInRow="FloorName" msprop:Generator_ColumnPropNameInTable="FloorNameColumn" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="BuildingID" msprop:Generator_ColumnVarNameInTable="columnBuildingID" msprop:Generator_ColumnPropNameInRow="BuildingID" msprop:Generator_ColumnPropNameInTable="BuildingIDColumn" msprop:Generator_UserColumnName="BuildingID" type="xs:int" minOccurs="0" />
+              <xs:element name="FloorName" msprop:Generator_ColumnVarNameInTable="columnFloorName" msprop:Generator_ColumnPropNameInRow="FloorName" msprop:Generator_ColumnPropNameInTable="FloorNameColumn" msprop:Generator_UserColumnName="FloorName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FileName" msprop:Generator_UserColumnName="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" minOccurs="0">
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Sequence" msprop:Generator_UserColumnName="Sequence" msprop:Generator_ColumnPropNameInRow="Sequence" msprop:Generator_ColumnVarNameInTable="columnSequence" msprop:Generator_ColumnPropNameInTable="SequenceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequence" msprop:Generator_ColumnVarNameInTable="columnSequence" msprop:Generator_ColumnPropNameInRow="Sequence" msprop:Generator_ColumnPropNameInTable="SequenceColumn" msprop:Generator_UserColumnName="Sequence" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Schools" msprop:Generator_UserTableName="Schools" msprop:Generator_RowDeletedName="SchoolsRowDeleted" msprop:Generator_RowChangedName="SchoolsRowChanged" msprop:Generator_RowClassName="SchoolsRow" msprop:Generator_RowChangingName="SchoolsRowChanging" msprop:Generator_RowEvArgName="SchoolsRowChangeEvent" msprop:Generator_RowEvHandlerName="SchoolsRowChangeEventHandler" msprop:Generator_TableClassName="SchoolsDataTable" msprop:Generator_TableVarName="tableSchools" msprop:Generator_RowDeletingName="SchoolsRowDeleting" msprop:Generator_TablePropName="Schools">
+        <xs:element name="Schools" msprop:Generator_UserTableName="Schools" msprop:Generator_RowEvArgName="SchoolsRowChangeEvent" msprop:Generator_TableVarName="tableSchools" msprop:Generator_TablePropName="Schools" msprop:Generator_RowDeletingName="SchoolsRowDeleting" msprop:Generator_RowChangingName="SchoolsRowChanging" msprop:Generator_RowDeletedName="SchoolsRowDeleted" msprop:Generator_RowEvHandlerName="SchoolsRowChangeEventHandler" msprop:Generator_TableClassName="SchoolsDataTable" msprop:Generator_RowChangedName="SchoolsRowChanged" msprop:Generator_RowClassName="SchoolsRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="SchoolName" msprop:Generator_UserColumnName="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Spaces" msprop:Generator_UserTableName="Spaces" msprop:Generator_RowDeletedName="SpacesRowDeleted" msprop:Generator_RowChangedName="SpacesRowChanged" msprop:Generator_RowClassName="SpacesRow" msprop:Generator_RowChangingName="SpacesRowChanging" msprop:Generator_RowEvArgName="SpacesRowChangeEvent" msprop:Generator_RowEvHandlerName="SpacesRowChangeEventHandler" msprop:Generator_TableClassName="SpacesDataTable" msprop:Generator_TableVarName="tableSpaces" msprop:Generator_RowDeletingName="SpacesRowDeleting" msprop:Generator_TablePropName="Spaces">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:double" minOccurs="0" />
-              <xs:element name="SpaceName" msprop:Generator_UserColumnName="SpaceName" msprop:Generator_ColumnPropNameInRow="SpaceName" msprop:Generator_ColumnVarNameInTable="columnSpaceName" msprop:Generator_ColumnPropNameInTable="SpaceNameColumn" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="FloorID" msprop:Generator_UserColumnName="FloorID" msprop:Generator_ColumnPropNameInRow="FloorID" msprop:Generator_ColumnVarNameInTable="columnFloorID" msprop:Generator_ColumnPropNameInTable="FloorIDColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="SpaceTypeID" msprop:Generator_UserColumnName="SpaceTypeID" msprop:Generator_ColumnPropNameInRow="SpaceTypeID" msprop:Generator_ColumnVarNameInTable="columnSpaceTypeID" msprop:Generator_ColumnPropNameInTable="SpaceTypeIDColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="Top" msprop:Generator_UserColumnName="Top" msprop:Generator_ColumnPropNameInRow="Top" msprop:Generator_ColumnVarNameInTable="columnTop" msprop:Generator_ColumnPropNameInTable="TopColumn" type="xs:double" minOccurs="0" />
-              <xs:element name="Left" msprop:Generator_UserColumnName="Left" msprop:Generator_ColumnPropNameInRow="Left" msprop:Generator_ColumnVarNameInTable="columnLeft" msprop:Generator_ColumnPropNameInTable="LeftColumn" type="xs:double" minOccurs="0" />
-              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:double" minOccurs="0" />
-              <xs:element name="Height" msprop:Generator_UserColumnName="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" type="xs:double" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="SpaceTypes" msprop:Generator_UserTableName="SpaceTypes" msprop:Generator_RowDeletedName="SpaceTypesRowDeleted" msprop:Generator_RowChangedName="SpaceTypesRowChanged" msprop:Generator_RowClassName="SpaceTypesRow" msprop:Generator_RowChangingName="SpaceTypesRowChanging" msprop:Generator_RowEvArgName="SpaceTypesRowChangeEvent" msprop:Generator_RowEvHandlerName="SpaceTypesRowChangeEventHandler" msprop:Generator_TableClassName="SpaceTypesDataTable" msprop:Generator_TableVarName="tableSpaceTypes" msprop:Generator_RowDeletingName="SpaceTypesRowDeleting" msprop:Generator_TablePropName="SpaceTypes">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="SpaceTypeName" msprop:Generator_UserColumnName="SpaceTypeName" msprop:Generator_ColumnPropNameInRow="SpaceTypeName" msprop:Generator_ColumnVarNameInTable="columnSpaceTypeName" msprop:Generator_ColumnPropNameInTable="SpaceTypeNameColumn" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" msprop:Generator_UserColumnName="SchoolName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -515,17 +586,69 @@ VALUES        (, today(),,,,,)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SpaceAssessments" msprop:Generator_UserTableName="SpaceAssessments" msprop:Generator_RowDeletedName="SpaceAssessmentsRowDeleted" msprop:Generator_RowChangedName="SpaceAssessmentsRowChanged" msprop:Generator_RowClassName="SpaceAssessmentsRow" msprop:Generator_RowChangingName="SpaceAssessmentsRowChanging" msprop:Generator_RowEvArgName="SpaceAssessmentsRowChangeEvent" msprop:Generator_RowEvHandlerName="SpaceAssessmentsRowChangeEventHandler" msprop:Generator_TableClassName="SpaceAssessmentsDataTable" msprop:Generator_TableVarName="tableSpaceAssessments" msprop:Generator_RowDeletingName="SpaceAssessmentsRowDeleting" msprop:Generator_TablePropName="SpaceAssessments">
+        <xs:element name="Spaces" msprop:Generator_UserTableName="Spaces" msprop:Generator_RowEvArgName="SpacesRowChangeEvent" msprop:Generator_TableVarName="tableSpaces" msprop:Generator_TablePropName="Spaces" msprop:Generator_RowDeletingName="SpacesRowDeleting" msprop:Generator_RowChangingName="SpacesRowChanging" msprop:Generator_RowDeletedName="SpacesRowDeleted" msprop:Generator_RowEvHandlerName="SpacesRowChangeEventHandler" msprop:Generator_TableClassName="SpacesDataTable" msprop:Generator_RowChangedName="SpacesRowChanged" msprop:Generator_RowClassName="SpacesRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
-              <xs:element name="AssessmentDate" msprop:Generator_UserColumnName="AssessmentDate" msprop:Generator_ColumnVarNameInTable="columnAssessmentDate" msprop:Generator_ColumnPropNameInRow="AssessmentDate" msprop:Generator_ColumnPropNameInTable="AssessmentDateColumn" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Air" msprop:Generator_UserColumnName="Air" msprop:Generator_ColumnVarNameInTable="columnAir" msprop:Generator_ColumnPropNameInRow="Air" msprop:Generator_ColumnPropNameInTable="AirColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="Light" msprop:Generator_UserColumnName="Light" msprop:Generator_ColumnVarNameInTable="columnLight" msprop:Generator_ColumnPropNameInRow="Light" msprop:Generator_ColumnPropNameInTable="LightColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="Temperature" msprop:Generator_UserColumnName="Temperature" msprop:Generator_ColumnVarNameInTable="columnTemperature" msprop:Generator_ColumnPropNameInRow="Temperature" msprop:Generator_ColumnPropNameInTable="TemperatureColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="Sound" msprop:Generator_UserColumnName="Sound" msprop:Generator_ColumnVarNameInTable="columnSound" msprop:Generator_ColumnPropNameInRow="Sound" msprop:Generator_ColumnPropNameInTable="SoundColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="Water" msprop:Generator_UserColumnName="Water" msprop:Generator_ColumnVarNameInTable="columnWater" msprop:Generator_ColumnPropNameInRow="Water" msprop:Generator_ColumnPropNameInTable="WaterColumn" type="xs:int" minOccurs="0" />
-              <xs:element name="SpaceID" msprop:Generator_UserColumnName="SpaceID" msprop:Generator_ColumnVarNameInTable="columnSpaceID" msprop:Generator_ColumnPropNameInRow="SpaceID" msprop:Generator_ColumnPropNameInTable="SpaceIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:double" minOccurs="0" />
+              <xs:element name="SpaceName" msprop:Generator_ColumnVarNameInTable="columnSpaceName" msprop:Generator_ColumnPropNameInRow="SpaceName" msprop:Generator_ColumnPropNameInTable="SpaceNameColumn" msprop:Generator_UserColumnName="SpaceName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FloorID" msprop:Generator_ColumnVarNameInTable="columnFloorID" msprop:Generator_ColumnPropNameInRow="FloorID" msprop:Generator_ColumnPropNameInTable="FloorIDColumn" msprop:Generator_UserColumnName="FloorID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpaceTypeID" msprop:Generator_ColumnVarNameInTable="columnSpaceTypeID" msprop:Generator_ColumnPropNameInRow="SpaceTypeID" msprop:Generator_ColumnPropNameInTable="SpaceTypeIDColumn" msprop:Generator_UserColumnName="SpaceTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Top" msprop:Generator_ColumnVarNameInTable="columnTop" msprop:Generator_ColumnPropNameInRow="Top" msprop:Generator_ColumnPropNameInTable="TopColumn" msprop:Generator_UserColumnName="Top" type="xs:double" minOccurs="0" />
+              <xs:element name="Left" msprop:Generator_ColumnVarNameInTable="columnLeft" msprop:Generator_ColumnPropNameInRow="Left" msprop:Generator_ColumnPropNameInTable="LeftColumn" msprop:Generator_UserColumnName="Left" type="xs:double" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" msprop:Generator_UserColumnName="Width" type="xs:double" minOccurs="0" />
+              <xs:element name="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" msprop:Generator_UserColumnName="Height" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpaceTypes" msprop:Generator_UserTableName="SpaceTypes" msprop:Generator_RowEvArgName="SpaceTypesRowChangeEvent" msprop:Generator_TableVarName="tableSpaceTypes" msprop:Generator_TablePropName="SpaceTypes" msprop:Generator_RowDeletingName="SpaceTypesRowDeleting" msprop:Generator_RowChangingName="SpaceTypesRowChanging" msprop:Generator_RowDeletedName="SpaceTypesRowDeleted" msprop:Generator_RowEvHandlerName="SpaceTypesRowChangeEventHandler" msprop:Generator_TableClassName="SpaceTypesDataTable" msprop:Generator_RowChangedName="SpaceTypesRowChanged" msprop:Generator_RowClassName="SpaceTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="SpaceTypeName" msprop:Generator_ColumnVarNameInTable="columnSpaceTypeName" msprop:Generator_ColumnPropNameInRow="SpaceTypeName" msprop:Generator_ColumnPropNameInTable="SpaceTypeNameColumn" msprop:Generator_UserColumnName="SpaceTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpaceAssessments" msprop:Generator_UserTableName="SpaceAssessments" msprop:Generator_RowEvArgName="SpaceAssessmentsRowChangeEvent" msprop:Generator_TableVarName="tableSpaceAssessments" msprop:Generator_TablePropName="SpaceAssessments" msprop:Generator_RowDeletingName="SpaceAssessmentsRowDeleting" msprop:Generator_RowChangingName="SpaceAssessmentsRowChanging" msprop:Generator_RowDeletedName="SpaceAssessmentsRowDeleted" msprop:Generator_RowEvHandlerName="SpaceAssessmentsRowChangeEventHandler" msprop:Generator_TableClassName="SpaceAssessmentsDataTable" msprop:Generator_RowChangedName="SpaceAssessmentsRowChanged" msprop:Generator_RowClassName="SpaceAssessmentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="AssessmentDate" msprop:Generator_ColumnVarNameInTable="columnAssessmentDate" msprop:Generator_ColumnPropNameInRow="AssessmentDate" msprop:Generator_ColumnPropNameInTable="AssessmentDateColumn" msprop:Generator_UserColumnName="AssessmentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Air" msprop:Generator_ColumnVarNameInTable="columnAir" msprop:Generator_ColumnPropNameInRow="Air" msprop:Generator_ColumnPropNameInTable="AirColumn" msprop:Generator_UserColumnName="Air" type="xs:int" minOccurs="0" />
+              <xs:element name="Light" msprop:Generator_ColumnVarNameInTable="columnLight" msprop:Generator_ColumnPropNameInRow="Light" msprop:Generator_ColumnPropNameInTable="LightColumn" msprop:Generator_UserColumnName="Light" type="xs:int" minOccurs="0" />
+              <xs:element name="Temperature" msprop:Generator_ColumnVarNameInTable="columnTemperature" msprop:Generator_ColumnPropNameInRow="Temperature" msprop:Generator_ColumnPropNameInTable="TemperatureColumn" msprop:Generator_UserColumnName="Temperature" type="xs:int" minOccurs="0" />
+              <xs:element name="Sound" msprop:Generator_ColumnVarNameInTable="columnSound" msprop:Generator_ColumnPropNameInRow="Sound" msprop:Generator_ColumnPropNameInTable="SoundColumn" msprop:Generator_UserColumnName="Sound" type="xs:int" minOccurs="0" />
+              <xs:element name="Water" msprop:Generator_ColumnVarNameInTable="columnWater" msprop:Generator_ColumnPropNameInRow="Water" msprop:Generator_ColumnPropNameInTable="WaterColumn" msprop:Generator_UserColumnName="Water" type="xs:int" minOccurs="0" />
+              <xs:element name="SpaceID" msprop:Generator_ColumnVarNameInTable="columnSpaceID" msprop:Generator_ColumnPropNameInRow="SpaceID" msprop:Generator_ColumnPropNameInTable="SpaceIDColumn" msprop:Generator_UserColumnName="SpaceID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Systems" msprop:Generator_TableClassName="SystemsDataTable" msprop:Generator_TableVarName="tableSystems" msprop:Generator_TablePropName="Systems" msprop:Generator_RowDeletingName="SystemsRowDeleting" msprop:Generator_RowChangingName="SystemsRowChanging" msprop:Generator_RowEvHandlerName="SystemsRowChangeEventHandler" msprop:Generator_RowDeletedName="SystemsRowDeleted" msprop:Generator_UserTableName="Systems" msprop:Generator_RowChangedName="SystemsRowChanged" msprop:Generator_RowEvArgName="SystemsRowChangeEvent" msprop:Generator_RowClassName="SystemsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="ParentCode" msprop:Generator_ColumnVarNameInTable="columnParentCode" msprop:Generator_ColumnPropNameInRow="ParentCode" msprop:Generator_ColumnPropNameInTable="ParentCodeColumn" msprop:Generator_UserColumnName="ParentCode" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentID" msprop:Generator_ColumnVarNameInTable="columnParentID" msprop:Generator_ColumnPropNameInRow="ParentID" msprop:Generator_ColumnPropNameInTable="ParentIDColumn" msprop:Generator_UserColumnName="ParentID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -555,14 +678,18 @@ VALUES        (, today(),,,,,)</CommandText>
       <xs:selector xpath=".//mstns:SpaceAssessments" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
+    <xs:unique name="Systems_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Systems" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="SchoolsBuildings" msdata:parent="Schools" msdata:child="Buildings" msdata:parentkey="ID" msdata:childkey="SchoolID" msprop:Generator_UserRelationName="SchoolsBuildings" msprop:Generator_RelationVarName="relationSchoolsBuildings" msprop:Generator_UserChildTable="Buildings" msprop:Generator_UserParentTable="Schools" msprop:Generator_ParentPropName="SchoolsRow" msprop:Generator_ChildPropName="GetBuildingsRows" />
-      <msdata:Relationship name="BuildingsFloors" msdata:parent="Buildings" msdata:child="Floors" msdata:parentkey="ID" msdata:childkey="BuildingID" msprop:Generator_UserRelationName="BuildingsFloors" msprop:Generator_RelationVarName="relationBuildingsFloors" msprop:Generator_UserChildTable="Floors" msprop:Generator_UserParentTable="Buildings" msprop:Generator_ParentPropName="BuildingsRow" msprop:Generator_ChildPropName="GetFloorsRows" />
-      <msdata:Relationship name="FloorsSpaces" msdata:parent="Floors" msdata:child="Spaces" msdata:parentkey="ID" msdata:childkey="FloorID" msprop:Generator_UserRelationName="FloorsSpaces" msprop:Generator_RelationVarName="relationFloorsSpaces" msprop:Generator_UserChildTable="Spaces" msprop:Generator_UserParentTable="Floors" msprop:Generator_ParentPropName="FloorsRow" msprop:Generator_ChildPropName="GetSpacesRows" />
-      <msdata:Relationship name="SpaceTypesSpaces" msdata:parent="SpaceTypes" msdata:child="Spaces" msdata:parentkey="ID" msdata:childkey="SpaceTypeID" msprop:Generator_UserRelationName="SpaceTypesSpaces" msprop:Generator_RelationVarName="relationSpaceTypesSpaces" msprop:Generator_UserChildTable="Spaces" msprop:Generator_UserParentTable="SpaceTypes" msprop:Generator_ParentPropName="SpaceTypesRow" msprop:Generator_ChildPropName="GetSpacesRows" />
-      <msdata:Relationship name="SpacesSpaceAssessments" msdata:parent="Spaces" msdata:child="SpaceAssessments" msdata:parentkey="ID" msdata:childkey="SpaceID" msprop:Generator_UserRelationName="SpacesSpaceAssessments" msprop:Generator_RelationVarName="relationSpacesSpaceAssessments" msprop:Generator_UserChildTable="SpaceAssessments" msprop:Generator_UserParentTable="Spaces" msprop:Generator_ParentPropName="SpacesRow" msprop:Generator_ChildPropName="GetSpaceAssessmentsRows" />
+      <msdata:Relationship name="SchoolsBuildings" msdata:parent="Schools" msdata:child="Buildings" msdata:parentkey="ID" msdata:childkey="SchoolID" msprop:Generator_UserChildTable="Buildings" msprop:Generator_ChildPropName="GetBuildingsRows" msprop:Generator_UserRelationName="SchoolsBuildings" msprop:Generator_ParentPropName="SchoolsRow" msprop:Generator_RelationVarName="relationSchoolsBuildings" msprop:Generator_UserParentTable="Schools" />
+      <msdata:Relationship name="BuildingsFloors" msdata:parent="Buildings" msdata:child="Floors" msdata:parentkey="ID" msdata:childkey="BuildingID" msprop:Generator_UserChildTable="Floors" msprop:Generator_ChildPropName="GetFloorsRows" msprop:Generator_UserRelationName="BuildingsFloors" msprop:Generator_ParentPropName="BuildingsRow" msprop:Generator_RelationVarName="relationBuildingsFloors" msprop:Generator_UserParentTable="Buildings" />
+      <msdata:Relationship name="FloorsSpaces" msdata:parent="Floors" msdata:child="Spaces" msdata:parentkey="ID" msdata:childkey="FloorID" msprop:Generator_UserChildTable="Spaces" msprop:Generator_ChildPropName="GetSpacesRows" msprop:Generator_UserRelationName="FloorsSpaces" msprop:Generator_ParentPropName="FloorsRow" msprop:Generator_RelationVarName="relationFloorsSpaces" msprop:Generator_UserParentTable="Floors" />
+      <msdata:Relationship name="SpaceTypesSpaces" msdata:parent="SpaceTypes" msdata:child="Spaces" msdata:parentkey="ID" msdata:childkey="SpaceTypeID" msprop:Generator_UserChildTable="Spaces" msprop:Generator_ChildPropName="GetSpacesRows" msprop:Generator_UserRelationName="SpaceTypesSpaces" msprop:Generator_ParentPropName="SpaceTypesRow" msprop:Generator_RelationVarName="relationSpaceTypesSpaces" msprop:Generator_UserParentTable="SpaceTypes" />
+      <msdata:Relationship name="SpacesSpaceAssessments" msdata:parent="Spaces" msdata:child="SpaceAssessments" msdata:parentkey="ID" msdata:childkey="SpaceID" msprop:Generator_UserChildTable="SpaceAssessments" msprop:Generator_ChildPropName="GetSpaceAssessmentsRows" msprop:Generator_UserRelationName="SpacesSpaceAssessments" msprop:Generator_ParentPropName="SpacesRow" msprop:Generator_RelationVarName="relationSpacesSpaceAssessments" msprop:Generator_UserParentTable="Spaces" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
